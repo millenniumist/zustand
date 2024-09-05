@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import useStorage from "../storage/useStorage";
+import { useStorage } from "../storage/useStorage";
 
 const Todo = () => {
   const { todo, addTask ,delTask} = useStorage()
@@ -9,6 +9,7 @@ const Todo = () => {
     e.preventDefault()
     addTask(task)
   }
+  console.log(useStorage())
   
 
   return (
